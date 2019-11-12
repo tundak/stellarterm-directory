@@ -3,7 +3,7 @@
 #Build logos.json before commit
 
 (cd ./source && ./buildLogos.js)
-if [[ $? -eq 1 ]]; then
+if [ $? -eq 1 ]; then
     echo "Error build logos.json";
     exit 1;
 fi;
@@ -11,7 +11,7 @@ fi;
 #Run directory.js before commit
 
 node directory.js
-if [[ $? -eq 1 ]]; then
+if [ $? -eq 1 ]; then
     echo "Error with run directory.js";
     exit 1;
 fi;
