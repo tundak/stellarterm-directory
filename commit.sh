@@ -3,7 +3,7 @@
 #Build logos.json before commit
 
 (cd ./source && ./buildLogos.js)
-if [[ $? -eq 1 ]]; then
+if [ $? -eq 1 ]; then
     echo "Error build logos.json";
     exit 1;
 fi;
